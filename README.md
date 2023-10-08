@@ -11,6 +11,5 @@
 |**1st. 테이블생성과관리**|계정생성, 테이블스페이스 생성 및 관리, 테이블 생성 및 관리|
 
 ### 3️⃣ Contect
-💌 Blog (https://velog.io/@mallang)
-
+💌 Blog (https://velog.io/@mallang) <br>
 💌 E-mail (sunyeon4012@gmail.com)
