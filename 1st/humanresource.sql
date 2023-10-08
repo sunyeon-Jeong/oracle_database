@@ -142,6 +142,7 @@ alter table job_history add (
 
 commit;
 --------------------------------------------------------------------------------
+-- 데이터입력
 SET VERIFY OFF
 ALTER SESSION SET NLS_LANGUAGE=American; 
 
@@ -2422,3 +2423,11 @@ ALTER TABLE departments
   ENABLE CONSTRAINT dept_mgr_fk;
 
 COMMIT;
+--------------------------------------------------------------------------------
+-- 테이블데이터 확인
+select * from regions;
+select * from countries;
+select * from employees;
+select * from job_history;
+select * from jobs;
+select * from locations;
