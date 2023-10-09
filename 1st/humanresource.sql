@@ -2431,3 +2431,34 @@ select * from employees;
 select * from job_history;
 select * from jobs;
 select * from locations;
+--------------------------------------------------------------------------------
+-- 테이블생성
+create table employees_temp (
+    employee_id number(6),
+    first_name varchar2(20),
+    last_name varchar2(25) not null,
+    email varchar2(25) not null,
+    phone_number varchar2(20),
+    hire_date date not null,
+    job_id varchar2(10) not null,
+    salary number(8, 2),
+    commission_pct number(2, 2),
+    manager_id number(6),
+    department_id number(4)
+)
+
+tablespace users
+pctfree 10
+pctused 40
+initrans 1
+maxtrans 100;
+--------------------------------------------------------------------------------
+create table test_jobs as select * from jobs;
+
+select * from test_jobs;
+--------------------------------------------------------------------------------
+create table emp_jobs as select e.first_name, e.last_name, j.job_title
+from employees e, jobs j
+where e.job_id = j.job_id;
+
+select * from emp_jobs;
